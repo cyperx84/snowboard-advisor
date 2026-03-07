@@ -211,7 +211,7 @@ export default function ResultsContent() {
                   <div>
                     <div className="text-sm text-slate-500">Lengths</div>
                     <div className="font-semibold text-slate-900">
-                      {rec.board.specs.length[0]}-{rec.board.specs.length[rec.board.specs.length - 1]}cm
+                      {rec.board.specs.length[0]}-{rec.board.specs.length[rec.board.specs.length.length - 1]}cm
                     </div>
                   </div>
                 </div>

@@ -128,7 +128,7 @@ export function RecommendationForm() {
               <Select
                 required
                 value={formData.skillLevel}
-                onValueChange={(value) => setFormData({ ...formData, skillLevel: value })}
+                onValueChange={(value) => setFormData({ ...formData, skillLevel: value || '' })}
               >
                 <SelectTrigger id="skillLevel">
                   <SelectValue placeholder="Select level" />
@@ -148,7 +148,7 @@ export function RecommendationForm() {
               <Select
                 required
                 value={formData.terrainPreference}
-                onValueChange={(value) => setFormData({ ...formData, terrainPreference: value })}
+                onValueChange={(value) => setFormData({ ...formData, terrainPreference: value || '' })}
               >
                 <SelectTrigger id="terrainPreference">
                   <SelectValue placeholder="Select terrain" />
