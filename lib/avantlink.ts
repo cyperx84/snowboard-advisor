@@ -6,12 +6,11 @@
  * and AVANTLINK_MERCHANT_ID in environment variables.
  */
 
-const WEBSITE_ID = process.env.AVANTLINK_WEBSITE_ID ?? "";
-const MERCHANT_ID = process.env.AVANTLINK_MERCHANT_ID ?? "";
-
 const AVANTLINK_BASE = "https://classic.avantlink.com/api.php";
 
 export function buildAffiliateSearchUrl(searchQuery: string): string | null {
+  const WEBSITE_ID = process.env.AVANTLINK_WEBSITE_ID ?? "";
+  const MERCHANT_ID = process.env.AVANTLINK_MERCHANT_ID ?? "";
   if (!WEBSITE_ID || !MERCHANT_ID) return null;
 
   const params = new URLSearchParams({
@@ -27,6 +26,7 @@ export function buildAffiliateSearchUrl(searchQuery: string): string | null {
 }
 
 export function buildAffiliateLinkUrl(destinationUrl: string): string | null {
+  const WEBSITE_ID = process.env.AVANTLINK_WEBSITE_ID ?? "";
   if (!WEBSITE_ID) return null;
 
   const params = new URLSearchParams({
