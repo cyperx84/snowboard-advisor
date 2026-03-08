@@ -26,6 +26,8 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@swc/core": "^1.15.18",
+    "@swc/jest": "^0.2.39",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
